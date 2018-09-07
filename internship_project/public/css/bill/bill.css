@@ -1,0 +1,11 @@
+.name_customer,.address_customer{
+	margin-left: 20px;
+	font-size: 1em;
+}
+.bill_infor{
+	font-size: 1em;
+	font-weight: bold;
+}
+.cancel{
+	color: #F32F2F;
+}

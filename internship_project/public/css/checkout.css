@@ -1,0 +1,354 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+html, body{
+    font-size: 100%;
+    font-family: Cambria;
+    background:#ffffff;
+}
+ul li,ol li{
+    font-size:14px;
+}
+p{
+    margin:0;
+}
+h1,h2,h3,h4,h5,h6,a{
+    font-family: Cambria
+    font-weight:700;
+}
+ul,label{
+    margin:0;
+    padding:0;
+}
+body a:hover{
+    text-decoration:none;
+}
+
+/*-- //register --*/
+/*-- checkout --*/
+.checkout h2{
+    font-size:1em;
+    color:#212121;
+    text-transform:uppercase;
+    margin:0 0 3em;
+}
+.checkout h2 span{
+    color:#3399cc;
+}
+table.timetable_sub {
+    width:100%;
+    margin:0 auto;
+}
+.timetable_sub thead {
+    background: #004284;
+}
+.timetable_sub th {
+    background: #fe9126;
+    color: #fff !important;
+    text-transform: capitalize;
+    font-size: 13px;
+    border-right: 1px solid #fe9126;
+}
+.timetable_sub th, .timetable_sub td {
+    text-align: center;
+    padding: 7px;
+    font-size: 14px;
+    color: #212121;
+}
+.timetable_sub td {
+    border:1px solid #CDCDCD;
+}
+td.invert-image a img {
+    width:30%;
+    margin: 0 auto;
+}
+.rem{
+    position:relative;
+}
+.close1,.close2,.close3 {
+    background: url('images/close_1.png') no-repeat 0px 0px;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 15px;
+    top: -13px;
+    -webkit-transition: color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out;
+    -o-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+}
+/*-- quantity-starts --*/
+ .value-minus,
+.value-plus{
+    height: 40px;
+    line-height: 24px;
+    width: 40px;
+    margin-right: 3px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    border:1px solid #b2b2b2;
+        vertical-align: bottom;
+}
+.quantity-select .entry.value-minus:before,
+.quantity-select .entry.value-plus:before{
+    content: ""; 
+    width: 13px;
+    height: 2px; 
+    background: #000;
+    left: 50%;
+    margin-left: -7px; 
+    top: 50%;
+    margin-top: -0.5px;
+    position: absolute;
+}
+.quantity-select .entry.value-plus:after{
+    content: "";
+    height: 13px;
+    width: 2px; 
+    background: #000;
+    left: 50%; 
+    margin-left: -1.4px;
+    top: 50%;
+    margin-top: -6.2px;
+    position: absolute;
+}
+.value  {
+    cursor: default;
+    width: 40px;
+    height:40px;
+    padding: 8px 0px;
+    color: #A9A9A9;
+    line-height: 24px;
+    border: 1px solid #E5E5E5;
+    background-color: #E5E5E5;
+    text-align: center;
+    display: inline-block;
+    margin-right: 3px;
+}
+.quantity-select .entry.value-minus:hover,
+ .quantity-select .entry.value-plus:hover{
+    background: #E5E5E5;
+}
+
+.quantity-select .entry.value-minus{
+    margin-left: 0;
+}
+/*-- quantity-end --*/
+.checkout-left-basket h4{
+    padding: 1em;
+    background:#3399cc;
+    font-size: 1.1em;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 1em;
+}
+.checkout-left {
+    margin: 2em 0 0;
+}
+.checkout-left-basket ul li{
+    list-style-type:none;
+    margin-bottom:1em;
+    font-size:14px;
+    color:#999;
+}
+.checkout-left-basket {
+    float: left;
+    width: 25%;
+}
+.checkout-right-basket{
+    float: right;
+    margin: 8em 0 0 0em;
+}
+.checkout-left-basket ul li span {
+    float: right;
+}
+.checkout-left-basket ul li:nth-child(5) {
+    font-size: 1em;
+    color: #212121;
+    font-weight: 600;
+    padding: 1em 0;
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    margin: 2em 0 0;
+}
+.checkout-right-basket a{
+    padding:10px 30px;
+    color:#fff;
+    font-size:1em;
+    background:#212121;
+    text-decoration:none;
+}
+.checkout-right-basket a:hover{
+    background:#fe9126;
+}
+.checkout-right-basket a span {
+    left: -.5em;
+    top: 0.1em;
+}
+.checkout {
+    padding: 5em 0;
+}
+/*-- //checkout --*/
+.time-bottom {
+    padding: 1.6em 2em;
+    background-color: #212121;
+}
+.time-bottom h5 {
+    font-size: 1.1em;
+    color: #FFF;
+    line-height: 1.8em;
+    letter-spacing: 1px;
+}
+.time-bottom p {
+    font-size: 1em;
+    color: #BBBBBB;
+    margin-top: 0.5em;
+    line-height: 1.8em;
+}
+/*-----start-responsive-design------*/
+@media (max-width:1680px){
+}
+@media (max-width:1600px){
+}
+@media (max-width:1440px){
+}
+@media (max-width:1366px){
+}
+@media (max-width: 1280px){
+}
+
+@media (max-width: 1024px){
+}
+
+.checkout-left-basket {
+    width: 34%;
+}
+@media (max-width:800px){
+}
+
+.checkout {
+    padding: 3em 0;
+}
+
+@media (max-width: 767px){
+    .navbar-nav > li {
+    float: none;
+    margin-left: 0px;
+    text-align: center;
+}
+.value {
+    width: 27px;
+    height: 27px;
+    padding: 8px 0px;
+    line-height: 13px;
+}
+.value-minus, .value-plus {
+    height: 27px;
+    line-height: 13px;
+    width: 27px;
+    font-size: 16px;
+}
+.agileinfo_single h2 {
+    font-size: 1.3em;
+}
+}
+.checkout-left-basket {
+    width: 42%;
+}
+@media (max-width: 568px){
+.checkout-left-basket {
+    width: 49%;
+}
+td.invert-image a img {
+    width: 65%;
+}
+}
+@media (max-width: 480px){
+
+.checkout-left-basket {
+    width: 57%;
+}
+.checkout-right-basket {
+    margin: 3em 0 0 0em;
+}
+}
+@media (max-width: 414px){
+
+.checkout h2 {
+    font-size: 0.95em;
+    margin: 0 0 2em;
+}
+.value-minus, .value-plus {
+   margin: 4px 15px;
+    display: inline-block;
+}
+.value {
+    margin: 4px 15px;
+    display: inline-block;
+}
+.quantity-select .entry.value-minus {
+    margin-left: 15px;
+}
+.checkout-left-basket {
+    width: 100%;
+}
+.agileinfo_single_left {
+    padding: 2em 2em;
+}
+.checkout h2 {
+    font-size: 0.9em;
+}
+}
+@media (max-width: 375px){
+    .login-form-grids {
+    width: 100%;
+}
+.checkout h2 {
+    font-size: 0.875em;
+}
+.agileinfo_single_left {
+    padding: 1em 1em;
+}
+.agileinfo_single h2 {
+    font-size: 1.1em;
+}
+}
+@media (max-width: 320px){
+.categories ul.cate, .new-products-grids {
+    padding: 1em;
+}
+ul.cate ul {
+    margin-left: 1.5em;
+}
+.about, .about-team, .contact, .codes {
+    padding: 2em 0;
+}
+ul.faq {
+    margin-top: 2em;
+    padding: 0 1em;
+}
+.faq-w3agile .faq li {
+    margin-top: 1em;
+}
+.faq > li > a {
+    line-height: 23px;
+}
+.checkout h2 {
+    font-size: 0.875em;
+    line-height: 22px;
+}
+.checkout {
+    padding: 2em 0;
+}
+}

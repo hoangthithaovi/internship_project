@@ -1,0 +1,343 @@
+/* Overlay style */
+
+.overlay {
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+
+/* Overlay closing cross */
+
+.overlay .overlay-close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    overflow: hidden;
+    background: none;
+    color: #fff;
+    border: 1px solid #dcddde;
+}
+
+button#trigger-overlay {
+    outline: none;
+    border: none;
+    background: none;
+    text-align: center;
+    color: #fbfdfb;
+    font-size: 1.65em;
+    padding: 0 8px;
+}
+
+
+/* Menu style */
+
+.overlay nav {
+    text-align: center;
+    position: relative;
+    top: 20%;
+    height: 0%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    height: 100%;
+    position: relative;
+}
+
+.overlay ul li {
+    display: block;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    line-height: 2.5em;
+    font-family: Cambria;
+}
+
+.overlay ul li a {
+    font-size: 1em;
+    font-weight: 600;
+    display: block;
+    color: #ECECEC;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    letter-spacing: 1px;
+    padding: 0.5em 0;
+    font-weight: bold;
+    font-family: Cambria;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+    color: #fb383b;
+}
+
+
+/* Effects */
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.container.overlay-open {
+    /* Effects *
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+    /* Effects */
+}
+
+.container::after {
+    content: '';
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#fff;
+    -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+    transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.container.overlay-open::after {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+.overlay-contentpush {
+    background:#000000;
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: -webkit-transform 0.5s, visibility 0s 0.5s;
+    transition: transform 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-contentpush.open {
+    visibility: visible;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+}
+
+@media screen and (max-height: 30.5em) {
+    .overlay nav {
+        height: 70%;
+        font-size: 34px;
+    }
+    .overlay ul li {
+        min-height: 34px;
+    }
+}
+
+@media (max-width:600px) {
+    .overlay ul li a {
+        font-size: 15px;
+    }
+    .overlay ul li {
+        line-height: 2em;
+    }
+}
+.w3-welcome-heading h2,.w3-welcome-heading h3{
+    color: #212121;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: Cambria;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.news-left-img{
+    min-height: 200px;
+}
+.news-left-text h5{
+    color: #FFFFFF;
+    font-size: 1.5em;
+    font-family: Cambria;
+    margin: 1.5em 0 0 0;
+    font-weight: 600;
+}
+
+.news-left-text {
+    background: bottom;
+    padding: 1em;
+    border: solid 10px rgba(0, 0, 0, 0.34);
+    height: 154px;
+    text-align: center;
+    font-family: Cambria;
+}
+.news-left-text h5:hover {
+    color: #f9f8f8;
+    text-decoration: none;
+}
+
+.date-grid {
+    margin: .5em 0;
+    font-family: Cambria;
+}
+.admin {
+    float: left;
+    font-family: Cambria;
+}
+.admin a {
+    color: #212121;
+    font-size: .9em;
+    margin: 0;
+    text-decoration: none;
+    font-family: Cambria;
+}
+.time {
+    float: left;
+    margin-left: 0em;
+    font-family: Cambria;
+}
+.time p {
+    color: #383838;
+    font-size: 14px;
+    margin: 0;
+    font-family: Cambria;
+}
+.news-left-top-text a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: Cambria;
+}
+.news-left-top-text a:hover{
+    color: #dd0a37;
+}
+.news-grid-info-bottom-text p {
+    margin: 0;
+    font-size: .9em;
+    color: #999999;
+    line-height: 1.8em;
+    font-family: Cambria;
+}
+
+.agile-news-grid:nth-child(2){
+    margin:2em 0 0 0;
+}
+
+.news-left-top-text a:focus {
+    outline: none;
+}
+/*-- //news --*/
+/*-- testimonial --*/
+.testimonial{
+    background: url(../../images/1.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    position:relative;
+}
+.testimonial-top{
+    text-align:center;
+}
+i.fa.fa-quote-right {
+    font-size: 3em;
+    color: #FFFFFF;
+}
+.testimonial-top p {
+    color: #ffffff;
+    font-size: .9em;
+    line-height: 2em;
+    margin: 2em auto;
+    width: 81%;
+    font-weight: 300;
+    font-family: Cambria;
+}
+.testimonial-top h5 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: Cambria;
+}
+.testimonial-top h5 span{
+    font-weight:300;
+    font-family: Cambria;
+}
+
+.event-info{
+    padding: 25px;
+    font-family: Cambria;
+}
+
+.jarallax {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.section-grid-wthree {
+    padding: 0px 0px 0px 0px;
+}
+
+.services-info-w3-agileits {
+    position: relative;
+    padding: 0px 0px 20px 0px;
+    background: #fff;
+}
+.services-info-w3-agileits h5 {
+    margin: 0;
+    font-family: Cambria;
+}
+.services-info-w3-agileits h5 a {
+    color: #000000;
+    font-size: 1.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration:none;
+    font-family: Cambria;
+}
+.services-info-w3-agileits h5 a:hover{
+    color: #8BC34A;
+}
+.services-info-w3-agileits h6 {
+    font-size: 1em;
+    color: #000000;
+    margin: 1em 0 0 0;
+    font-family: Cambria;
+}
+.services-info-w3-agileits h6 a {
+    color: #8BC34A;
+    text-decoration:none;
+    font-family: Cambria;
+}
+.services-info-w3-agileits h6 a:hover{
+    color:#000000;
+}
+.services-img-agileits-w3layouts img {
+    width: 100%;
+    height: 270px;
+}
+.para-w3 {
+    color: #999999;
+    font-size: .9em;
+    line-height: 2em;
+    margin: 1em 0 0 0;
+    font-family: Cambria;
+}
+.feature {
+    color: #dd0a37;
+}
